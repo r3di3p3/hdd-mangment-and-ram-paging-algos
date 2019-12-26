@@ -57,8 +57,8 @@ def move_fifo_algo():
     ref_index = ref_index + 1  
 
 def move_scan_algo_command():
-    global current_position,length_ref_chain,ref_chain,listbox_ref,direction
-    i = 0
+    global current_position,length_ref_chain,ref_chain,listbox_ref,direction,ref_index
+    i = ref_index
     #while(obj_found != length_ref_chain):
     while(i < length_ref_chain):
         if(int(current_position.get()) == int(ref_chain[i])):
